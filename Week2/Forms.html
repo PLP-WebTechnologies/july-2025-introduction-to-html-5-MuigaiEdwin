@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Scripted FARM Kenya - Learn poultry and beekeeping with simplified registration forms for educational purposes.">
+    <meta name="keywords" content="Kenya farming, poultry farming, beekeeping, learning forms, HTML5 validation">
+    <meta name="author" content="Scripted FARM Kenya">
+    <title>Scripted FARM Kenya | Simple Livestock Learning Forms</title>
+</head>
+<body>
+    <header>
+        <h1>Scripted FARM Kenya</h1>
+        <p>Learn modern poultry and beekeeping techniques</p>
+        
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#content">Farm Guide</a></li>
+                <li><a href="#media">Learning Materials</a></li>
+                <li><a href="#registration">Registration Form</a></li>
+                <li><a href="#consultation">Quick Consultation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="content" aria-labelledby="content-heading">
+            <h2 id="content-heading">Kenya Livestock Farming Guide</h2>
+            
+            <article>
+                <h3>Popular Livestock Enterprises</h3>
+                <p>These are the most profitable small-scale livestock operations in Kenya.</p>
+                
+                <table>
+                    <caption>Simple comparison of livestock enterprises in Kenya (KES)</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Enterprise</th>
+                            <th scope="col">Startup Cost</th>
+                            <th scope="col">Monthly Income</th>
+                            <th scope="col">Space Needed</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Kienyeji Chickens (50 birds)</th>
+                            <td>50,000</td>
+                            <td>25,000</td>
+                            <td>400 sq ft</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Broiler Chickens (200 birds)</th>
+                            <td>80,000</td>
+                            <td>60,000</td>
+                            <td>600 sq ft</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Beekeeping (5 hives)</th>
+                            <td>60,000</td>
+                            <td>20,000</td>
+                            <td>100 sq ft</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+
+            <article>
+                <h3>Essential Farm Tasks</h3>
+                <p>Daily and weekly tasks for successful livestock farming.</p>
+                
+                <h4>Daily Tasks</h4>
+                <ol>
+                    <li>Feed animals morning and evening</li>
+                    <li>Provide fresh clean water</li>
+                    <li>Check for sick or injured animals</li>
+                    <li>Collect eggs (for layers)</li>
+                    <li>Clean feeding areas</li>
+                </ol>
+
+                <h4>Weekly Tasks</h4>
+                <ul>
+                    <li>Clean and disinfect housing</li>
+                    <li>Check equipment and repairs</li>
+                    <li>Plan feed purchases</li>
+                    <li>Record production and expenses</li>
+                </ul>
+
+                <h4>Key Success Factors</h4>
+                <dl>
+                    <dt>Good Housing</dt>
+                    <dd>Protect animals from rain, wind, and predators</dd>
+                    
+                    <dt>Quality Feed</dt>
+                    <dd>Use certified feeds appropriate for each animal type</dd>
+                    
+                    <dt>Health Management</dt>
+                    <dd>Vaccinate on schedule and treat sick animals quickly</dd>
+                    
+                    <dt>Record Keeping</dt>
+                    <dd>Track income, expenses, and production to improve profits</dd>
+                </dl>
+            </article>
+        </section>
+
+        <section id="media" aria-labelledby="media-heading">
+            <h2 id="media-heading">Learning Resources</h2>
+            
+            <article>
+                <h3>Visual Learning</h3>
+                
+                <figure>
+                    <img src="chicken-house-kenya.jpg" 
+                         alt="Simple wooden chicken house with iron sheet roof and wire mesh windows suitable for Kenyan climate" 
+                         width="600" height="400">
+                    <figcaption>Basic chicken house design for Kenyan conditions</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="beehive-setup.jpg" 
+                         alt="Modern beehives placed under trees with beekeeper in protective gear" 
+                         width="600" height="400">
+                    <figcaption>Proper beehive placement and management</figcaption>
+                </figure>
+
+                <h4>Audio Training</h4>
+                <figure>
+                    <audio controls preload="metadata" aria-labelledby="audio-training">
+                        <source src="poultry-basics-swahili.mp3" type="audio/mpeg">
+                        <source src="poultry-basics-swahili.ogg" type="audio/ogg">
+                        Your browser does not support audio. 
+                        <a href="poultry-basics-swahili.mp3">Download training audio</a>
+                    </audio>
+                    <figcaption id="audio-training">Basic poultry farming in Kiswahili (10 minutes)</figcaption>
+                </figure>
+
+                <h4>Video Tutorial</h4>
+                <figure>
+                    <video controls width="500" height="300" poster="farming-video-preview.jpg">
+                        <source src="kenya-beekeeping-basics.mp4" type="video/mp4">
+                        <source src="kenya-beekeeping-basics.webm" type="video/webm">
+                        <track src="beekeeping-captions.vtt" kind="captions" srclang="en" label="English">
+                        Your browser does not support video.
+                        <a href="kenya-beekeeping-basics.mp4">Download video tutorial</a>
+                    </video>
+                    <figcaption>Beekeeping basics for Kenyan farmers (15 minutes)</figcaption>
+                </figure>
+            </article>
+        </section>
+
+        <section id="registration" aria-labelledby="registration-heading">
+            <h2 id="registration-heading">Farm Registration Form</h2>
+            
+            <form action="/register-farm" method="post" novalidate aria-labelledby="registration-heading">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    
+                    <label for="full-name">Full Name: *</label>
+                    <input type="text" 
+                           id="full-name" 
+                           name="full-name" 
+                           required 
+                           minlength="3" 
+                           maxlength="50"
+                           placeholder="John Mwangi Kamau"
+                           autocomplete="name">
+
+                    <label for="email">Email Address: *</label>
+                    <input type="email" 
+                           id="email" 
+                           name="email" 
+                           required 
+                           placeholder="john.mwangi@gmail.com"
+                           autocomplete="email">
+
+                    <label for="phone">Mobile Number: *</label>
+                    <input type="tel" 
+                           id="phone" 
+                           name="phone" 
+                           required 
+                           placeholder="0712345678"
+                           pattern="(\+?254|0)[17]\d{8}"
+                           title="Enter valid Kenyan mobile number"
+                           autocomplete="tel">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Farm Location</legend>
+                    
+                    <label for="county">County: *</label>
+                    <select id="county" name="county" required>
+                        <option value="">Select your county</option>
+                        <option value="kiambu">Kiambu</option>
+                        <option value="murang'a">Murang'a</option>
+                        <option value="nakuru">Nakuru</option>
+                        <option value="meru">Meru</option>
+                        <option value="kakamega">Kakamega</option>
+                    </select>
+
+                    <label for="farm-size">Farm Size (acres): *</label>
+                    <input type="number" 
+                           id="farm-size" 
+                           name="farm-size" 
+                           required 
+                           min="0.5" 
+                           max="100" 
+                           step="0.5"
+                           placeholder="2.0">
+
+                    <label for="start-date">When did you start farming?</label>
+                    <input type="date" 
+                           id="start-date" 
+                           name="start-date" 
+                           min="2000-01-01" 
+                           max="2024-12-31">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Livestock Information</legend>
+                    
+                    <fieldset>
+                        <legend>What animals do you keep? (check all that apply)</legend>
+                        
+                        <input type="checkbox" id="chickens" name="animals" value="chickens">
+                        <label for="chickens">Chickens</label>
+
+                        <input type="checkbox" id="ducks" name="animals" value="ducks">
+                        <label for="ducks">Ducks</label>
+
+                        <input type="checkbox" id="bees" name="animals" value="bees">
+                        <label for="bees">Honey Bees</label>
+
+                        <input type="checkbox" id="rabbits" name="animals" value="rabbits">
+                        <label for="rabbits">Rabbits</label>
+                    </fieldset>
+
+                    <label for="main-focus">Main Focus: *</label>
+                    <select id="main-focus" name="main-focus" required>
+                        <option value="">Choose main focus</option>
+                        <option value="eggs">Egg Production</option>
+                        <option value="meat">Meat Production</option>
+                        <option value="honey">Honey Production</option>
+                        <option value="mixed">Mixed Farming</option>
+                    </select>
+
+                    <label for="animal-count">Total Number of Animals: *</label>
+                    <input type="number" 
+                           id="animal-count" 
+                           name="animal-count" 
+                           required 
+                           min="10" 
+                           max="1000"
+                           placeholder="50">
+
+                    <label for="experience">Your Experience Level: *</label>
+                    <fieldset>
+                        <legend>How long have you been farming?</legend>
+                        
+                        <input type="radio" id="new-farmer" name="experience" value="new" required>
+                        <label for="new-farmer">New Farmer (0-1 year)</label>
+
+                        <input type="radio" id="some-experience" name="experience" value="some" required>
+                        <label for="some-experience">Some Experience (2-5 years)</label>
+
+                        <input type="radio" id="experienced" name="experience" value="experienced" required>
+                        <label for="experienced">Experienced (5+ years)</label>
+                    </fieldset>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Services Needed</legend>
+                    
+                    <fieldset>
+                        <legend>What help do you need? (select all that apply)</legend>
+                        
+                        <input type="checkbox" id="training" name="services" value="training">
+                        <label for="training">Training Workshops</label>
+
+                        <input type="checkbox" id="farm-visit" name="services" value="visit">
+                        <label for="farm-visit">Farm Visit</label>
+
+                        <input type="checkbox" id="health-help" name="services" value="health">
+                        <label for="health-help">Animal Health Support</label>
+
+                        <input type="checkbox" id="market-help" name="services" value="market">
+                        <label for="market-help">Marketing Support</label>
+                    </fieldset>
+
+                    <label for="contact-method">How should we contact you? *</label>
+                    <select id="contact-method" name="contact-method" required>
+                        <option value="">Choose contact method</option>
+                        <option value="sms">SMS</option>
+                        <option value="whatsapp">WhatsApp</option>
+                        <option value="call">Phone Call</option>
+                        <option value="email">Email</option>
+                    </select>
+
+                    <label for="budget">Budget for services (KES per year):</label>
+                    <input type="range" 
+                           id="budget" 
+                           name="budget" 
+                           min="5000" 
+                           max="50000" 
+                           step="5000" 
+                           value="15000"
+                           oninput="document.getElementById('budget-amount').textContent = 'KES ' + this.value">
+                    <output id="budget-amount">KES 15000</output>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    
+                    <label for="challenges">What are your main challenges?</label>
+                    <textarea id="challenges" 
+                              name="challenges" 
+                              rows="3" 
+                              cols="50" 
+                              maxlength="200"
+                              placeholder="e.g. High feed costs, diseases, market access..."
+                              aria-describedby="challenge-help"></textarea>
+                    <small id="challenge-help">Tell us your biggest problems (max 200 characters)</small>
+
+                    <label for="website">Farm Website (if any):</label>
+                    <input type="url" 
+                           id="website" 
+                           name="website" 
+                           placeholder="https://www.myfarm.com">
+
+                    <input type="checkbox" id="newsletter" name="newsletter" value="yes" checked>
+                    <label for="newsletter">Send me monthly farming tips</label>
+
+                    <input type="checkbox" id="agree-terms" name="agree-terms" value="yes" required>
+                    <label for="agree-terms">I agree to the terms and conditions *</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Submit Form</legend>
+                    
+                    <label for="today-date">Today's Date:</label>
+                    <input type="date" 
+                           id="today-date" 
+                           name="today-date" 
+                           readonly 
+                           value="2024-08-06">
+
+                    <button type="submit">Register My Farm</button>
+                    <button type="reset">Clear Form</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <section id="consultation" aria-labelledby="consultation-heading">
+            <h2 id="consultation-heading">Quick Help Request</h2>
+            
+            <form action="/quick-help" method="post" aria-labelledby="consultation-heading">
+                <fieldset>
+                    <legend>Request Help</legend>
+                    
+                    <label for="help-name">Your Name: *</label>
+                    <input type="text" 
+                           id="help-name" 
+                           name="help-name" 
+                           required 
+                           autocomplete="name">
+
+                    <label for="help-email">Email: *</label>
+                    <input type="email" 
+                           id="help-email" 
+                           name="help-email" 
+                           required 
+                           autocomplete="email">
+
+                    <label for="urgency">How urgent is this? *</label>
+                    <select id="urgency" name="urgency" required>
+                        <option value="">Select urgency</option>
+                        <option value="emergency">Emergency (same day)</option>
+                        <option value="urgent">Urgent (within 3 days)</option>
+                        <option value="normal">Normal (within 1 week)</option>
+                    </select>
+
+                    <label for="help-type">Type of Problem: *</label>
+                    <fieldset>
+                        <legend>What kind of help do you need?</legend>
+                        
+                        <input type="radio" id="sick-animals" name="help-type" value="health" required>
+                        <label for="sick-animals">Sick Animals</label>
+
+                        <input type="radio" id="feeding-question" name="help-type" value="feeding" required>
+                        <label for="feeding-question">Feeding Question</label>
+
+                        <input type="radio" id="housing-problem" name="help-type" value="housing" required>
+                        <label for="housing-problem">Housing Problem</label>
+
+                        <input type="radio" id="business-advice" name="help-type" value="business" required>
+                        <label for="business-advice">Business Advice</label>
+                    </fieldset>
+
+                    <label for="problem-details">Describe your problem: *</label>
+                    <textarea id="problem-details" 
+                              name="problem-details" 
+                              required 
+                              rows="4" 
+                              cols="50" 
+                              minlength="10" 
+                              maxlength="300"
+                              placeholder="Please explain your problem in detail..."
+                              aria-describedby="problem-help"></textarea>
+                    <small id="problem-help">Give us enough details to help you (10-300 characters)</small>
+
+                    <button type="submit">Send Help Request</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <section aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact Us</h2>
+            <address>
+                <p><strong>Scripted FARM Kenya</strong></p>
+                <p>Murang'a County, Kenya</p>
+                <p>Phone: <a href="tel:+254712345678">+254 712 345 678</a></p>
+                <p>Email: <a href="mailto:info@scriptedfarm.co.ke">info@scriptedfarm.co.ke</a></p>
+            </address>
+        </section>
+
+        <nav aria-label="Footer links">
+            <ul>
+                <li><a href="#privacy">Privacy Policy</a></li>
+                <li><a href="#terms">Terms of Service</a></li>
+                <li><a href="#help">Help Center</a></li>
+            </ul>
+        </nav>
+
+        <p><small>&copy; 2025 Scripted FARM Kenya. Educational content for farmers.</small></p>
+    </footer>
+</body>
+</html>
